@@ -117,54 +117,85 @@
 </body>
 </html>
 <div>
-<body> <h1>Internet of Things (IoT)</h1> 
-   <li> muncul karena adanya perkembangan teknologi yang menuntut Any time connection, Any things connection, Any place connection. Pemanfaatan IoT dapat diterapkan untuk mengendalikan beberapa alat elektronik dengan menggunakan perangkat smartphone.
-
-        Telegram bot adalah sebuah bot atau robot yang diprogram dengan berbagai perintah untuk menjalankan serangkaian instruksi yang diberikan oleh pengguna. Bot ini adalah sebuah akun Telegram yang dioperasikan oleh perangkat lunak yang memiliki fitur AI.
-
-            Selama ini, seringnya lampu LED dinyalakan dengan menggunakan sumber energi langsung seperti baterai dan listrik. Dalam percobaan kali ini, kami menggunakan Bot Telegram untuk menyalakan lampu LED. Kontrol on/off dijalankan dari smartphone yang tersambung dengan jaringan internet. Oleh sebab itu, kami mengambil tema “Menyalakan Lampu LED dengan Bot Telegram”.
-    </li>
-           </div>1.NodeMCU ESP8266
-<li>NodeMCU ESP8266 merupakan modul turunan pengembangan dari modul platform IoT (Internet of Things) keluarga ESP8266 tipe ESP-12.<p> Secara fungsi modul ini hampir menyerupai dengan platform modul Arduino, tetapi yang membedakan yaitu dikhususkan untuk “Connected to Internet”.</div></p>
-</li></div>
 </div>
-<center><p>2.Relay Module 2 Channel </center>
-<li>Modul relay adalah salah satu piranti yang beroperasi berdasarkan prinsip elektromagnetik untuk menggerakkan kontaktor guna memindahkan posisi ON ke OFF atau sebaliknya dengan memanfaatkan tenaga listrik.</p>
-</li>
-</html>
-<div>
-<center>3.Kabel Jumper Female to Female</center>
-<li>Kabel jumper adalah kabel elektrik yang memiliki pin konektor di setiap ujungnya dan memungkinkan untuk menghubungkan dua komponen yang melibatkan Arduino tanpa memerlukan solder.<p> Kabel ini digunakan untuk menghubungkan antar komponen yang memiliki header male.</p>
-</li>
-    <div>
-<center>4.<li>Kabel USB 2.0 to Micro USB</center>
-USB adalah sebuah teknologi penghubung hardware lain untuk dihubungkan agar dapat difungsikan oleh komputer atau PC.<p> Dengan adanya USB, maka pengguna dapat melakukan transfer data dengan kecepatan mencapai 12 Mbps.</p>
-        </li>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Preloader</title>
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <style type="text/css">
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background-color: #fff;
+    }
+    .preloader .loading {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      font: 14px arial;
+    }
+    </style>
+<script>
+    $(document).ready(function(){
+      $(".preloader").fadeOut();
+    })
+    </script>
+  </head>
+<body>
+    <div class="preloader">
+      <div class="loading">
+        <img src="poi.gif" width="80">
+        <p>Harap Tunggu</p>
+      </div>
     </div>
-<center>5.Lampu LED</center>
-<li>Light Emitting Diode atau LED adalah komponen elektronika yang dapat memancarkan cahaya monokromatik ketika diberikan tegangan maju. <p>LED merupakan keluarga Dioda yang terbuat dari bahan semikonduktor. Warna-warna cahaya yang dipancarkan oleh LED tergantung pada jenis bahan semikonduktor yang dipergunakannya.</p>
-</div>
-<b><center> Pembuatan Bot Telegram</center></b>
-<li><p>1.Menyiapkan Alat dan Bahan</p>
-<p>Siapkan seluruh komponen-komponen alat dan bahan seperti NodeMCU, Relay, Kabel jumper </p>female to female, Kabel USB Micro, dan lampu LED.
-</li>
-</div>
-2.Perangkaian
-<li>Sambungkan NodeMCU ESP8266 dengan Relay menggunakan kabel jumper Female to Female yang sudah ada.<p></li><li> Pasang lampu LED yang sudah ada ke board NodeMCU. Sambungkan juga Relay ke laptop ataupun adaptor yang memiliki tegangan listrik sebagai daya utama menggunakan kabel Micro USB yang telah disediakan. Setelahnya siapkan Bot Telegram</p>
-</li>
-<div>
-<b>3.Membuat Bot Telegram</b>
-<li></div>Masuk ke aplikasi Telegram, kemudian lakukan Add pada akun @BotFather dengan memberi perintah /start. </li><p>Lalu, masukkan informasi mengenai bot yang akan dibuat. Setelah selesai membuat bot, akan diberikan token untuk mengakses HTTP API. Token tersebut akan dimasukkan ke dalam program pada ESP8266. </p>
+<section>
+      <h1>Internert ofthing (IOT)</h1>
+      <p> muncul karena adanya perkembangan teknologi yang menuntut Any time connection, Any things connection, Any place connection. Pemanfaatan IoT dapat diterapkan untuk mengendalikan beberapa alat elektronik dengan menggunakan perangkat smartphone.
 
-<p><div><center><b>Kesimpulan</b></center>
-Dengan memanfaatkan API dari Bot Telegram, kita dapat menghubungkan perangkat ESP8266 dan smartphone Android/IOS, melakukan komunikasi antara kedua perangkat tersebut hingga membuat sebuah sistem kontrol berbasis chat yang mampu mengontrol relay lampu dengan menggunakan jaringan internet.</center>
+            Telegram bot adalah sebuah bot atau robot yang diprogram dengan berbagai perintah untuk menjalankan serangkaian instruksi yang diberikan oleh pengguna. Bot ini adalah sebuah akun Telegram yang dioperasikan oleh perangkat lunak yang memiliki fitur AI.
 
-                            </div>
+            Selama ini, seringnya lampu LED dinyalakan dengan menggunakan sumber energi langsung seperti baterai dan listrik. Dalam percobaan kali ini, kami menggunakan Bot Telegram untuk menyalakan lampu LED. Kontrol on/off dijalankan dari smartphone yang tersambung dengan jaringan internet. Oleh sebab itu, kami mengambil tema “Menyalakan Lampu LED dengan Bot Telegram”.</p>
+    </section>
+<section>
+            <h1>1.NodeMCU ESP8266</h1>
+            <p>NodeMCU ESP8266 merupakan modul turunan pengembangan dari modul platform IoT (Internet of Things) keluarga ESP8266 tipe ESP-12.<p> Secara fungsi modul ini hampir menyerupai dengan platform modul Arduino, tetapi yang membedakan yaitu dikhususkan untuk “Connected to Internet”.
+            <h1>2.Relay Module 2 Channel</h1>
+            <p>Modul relay adalah salah satu piranti yang beroperasi berdasarkan prinsip elektromagnetik untuk menggerakkan kontaktor guna memindahkan posisi ON ke OFF atau sebaliknya dengan memanfaatkan tenaga listrik.</p>
+            <h1>3.Kabel jumper Female to Male</h1>
+            <p>Kabel jumper adalah kabel elektrik yang memiliki pin konektor di setiap ujungnya dan memungkinkan untuk menghubungkan dua komponen yang melibatkan Arduino tanpa memerlukan solder.Kabel ini digunakan untuk menghubungkan antar komponen yang memiliki header male.</p>
+            <h1>4.Kabel USB 2.0 to Micro USB</h1>
+            <p>USB adalah sebuah teknologi penghubung hardware lain untuk dihubungkan agar dapat difungsikan oleh komputer atau PC.<p> Dengan adanya USB, maka pengguna dapat melakukan transfer data dengan kecepatan mencapai 12 Mbps.</p>
+            <h1>5.Lampu LED</h1>
+            <p>Light Emitting Diode atau LED adalah komponen elektronika yang dapat memancarkan cahaya monokromatik ketika diberikan tegangan maju.LED merupakan keluarga Dioda yang terbuat dari bahan semikonduktor. Warna-warna cahaya yang dipancarkan oleh LED tergantung pada jenis bahan semikonduktor yang dipergunakannya.</p>
+            <h1><b>Pembuatan Bot Telegram</b></h1>
+            <p>1.Menyiapkan Alat dan Bahan</p>
+            <p>.Siapkan seluruh komponen-komponen alat dan bahan seperti NodeMCU, Relay, Kabel jumper female to female, Kabel USB Micro, dan lampu LED.</p>
+            <p>2.Perangkaian</p>
+            <p>Sambungkan NodeMCU ESP8266 dengan Relay menggunakan kabel jumper Female to Female yang sudah ada. Pasang lampu LED yang sudah ada ke board NodeMCU. Sambungkan juga Relay ke laptop ataupun adaptor yang memiliki tegangan listrik sebagai daya utama menggunakan kabel Micro USB yang telah disediakan. Setelahnya siapkan Bot Telegram</p>
+            <P>3.Membuat Bot Telegram</P>
+            <P>Masuk ke aplikasi Telegram, kemudian lakukan Add pada akun @BotFather dengan memberi perintah /start. </li><p>Lalu, masukkan informasi mengenai bot yang akan dibuat. Setelah selesai membuat bot, akan diberikan token untuk mengakses HTTP API. Token tersebut akan dimasukkan ke dalam program pada ESP8266. </p>
 
-                           <center><b> Saran</b></center>
-<li>Untuk menghindari kegagalan saat proses pengujian, diharapkan untuk selalu menjaga
-<p> konektivitas jaringan internet supaya konsep IoT yang diterapkan pada rangkaian tetap berjalan lancar.</p></li>
-                        </div>
+
+      </div></p>
+.</p>
+    </section>
+<section>
+      <h1>Kesimpulan</h1>
+      <p>Dengan memanfaatkan API dari Bot Telegram, kita dapat menghubungkan perangkat ESP8266 dan smartphone Android/IOS, melakukan komunikasi antara kedua perangkat tersebut hingga membuat sebuah sistem kontrol berbasis chat yang mampu mengontrol relay lampu dengan menggunakan jaringan internet.
+        Untuk menghindari kegagalan saat proses pengujian, diharapkan untuk selalu menjaga
+     konektivitas jaringan internet supaya konsep IoT yang diterapkan pada rangkaian tetap berjalan lancar.</p></li>
+      </center>
+</p>
+    </section>
+  </body>
+</html>
                     </div>
                 </div>
       </div>
@@ -332,8 +363,10 @@ Dengan memanfaatkan API dari Bot Telegram, kita dapat menghubungkan perangkat ES
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src=jquery.min"><script>
 </body>
 
 </html>
